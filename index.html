@@ -25,8 +25,9 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/images/scapecraft-logo.png">
 
-  <!-- Google Fonts & Stylesheet -->
+  <!-- Google Fonts & Stylesheets -->
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/mobile.css">
 
   <!-- Schema.org Structured Data -->
   <script type="application/ld+json">
@@ -73,6 +74,9 @@
   </script>
 </head>
 <body>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scrollProgress"></div>
 
   <!-- ==================== HEADER ==================== -->
   <header class="header">
@@ -166,7 +170,7 @@
         <div class="hero-showcase">
           <div class="hero-card-main">
             <div class="hero-media-wrapper">
-              <img src="assets/images/the-heights.jpg" alt="The Heights Modern Architectural Project" id="heroFeaturedImg">
+              <img src="assets/images/the-heights.jpg" alt="The Heights Modern Architectural Project" id="heroFeaturedImg" loading="eager">
               <div class="hero-media-overlay">
                 <div class="hero-project-meta">
                   <div>
@@ -200,7 +204,7 @@
         <div class="projects-header">
           <div>
             <span class="section-label">Curated Architecture Portfolio</span>
-            <h2 class="section-title">Selected Works & Built Environments</h2>
+            <h2 class="section-title reveal">Selected Works & Built Environments</h2>
             <p class="section-subtitle">
               From high-density civic landmarks and sustainable micro-communities to luxury residences and hyper-realistic VR simulations.
             </p>
@@ -227,7 +231,7 @@
       <div class="container">
         <div style="text-align: center; max-width: 750px; margin: 0 auto 3rem;">
           <span class="section-label">Immersive Technology Suite</span>
-          <h2 class="section-title">Interactive 3D & Lighting Simulator</h2>
+          <h2 class="section-title reveal">Interactive 3D & Lighting Simulator</h2>
           <p class="section-subtitle" style="margin: 0 auto;">
             Experience how ScapeCraft evaluates daylighting, solar exposure, BIM wireframe geometry, and materials prior to breaking ground.
           </p>
@@ -401,7 +405,7 @@
       <div class="container">
         <div style="text-align: center; max-width: 750px; margin: 0 auto 4rem;">
           <span class="section-label">Full Lifecycle Capabilities</span>
-          <h2 class="section-title">Comprehensive Architectural Services</h2>
+          <h2 class="section-title reveal">Comprehensive Architectural Services</h2>
           <p class="section-subtitle" style="margin: 0 auto;">
             From initial zoning studies and schematic form exploration through BIM construction documentation, photorealistic marketing assets, and immersive virtual reality tours.
           </p>
@@ -500,7 +504,7 @@
       <div class="container">
         <div style="text-align: center; max-width: 750px; margin: 0 auto 3.5rem;">
           <span class="section-label">Transparent Architectural Planning</span>
-          <h2 class="section-title">Project Scope & Budget Tier Calculator</h2>
+          <h2 class="section-title reveal">Project Scope & Budget Tier Calculator</h2>
           <p class="section-subtitle" style="margin: 0 auto;">
             Select your typology, anticipated square footage, and desired delivery scope to receive an instant timeline and budget framework.
           </p>
@@ -584,7 +588,7 @@
       <div class="container">
         <div style="text-align: center; max-width: 750px; margin: 0 auto 3.5rem;">
           <span class="section-label">Verified Stakeholder Feedback</span>
-          <h2 class="section-title">Client Trust & International Recognition</h2>
+          <h2 class="section-title reveal">Client Trust & International Recognition</h2>
           <p class="section-subtitle" style="margin: 0 auto;">
             Real estate developers, private estate owners, and commercial brands who partnered with ScapeCraft.
           </p>
@@ -872,5 +876,6 @@
 
   <!-- Script Engine -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/enhance.js"></script>
 </body>
 </html>
